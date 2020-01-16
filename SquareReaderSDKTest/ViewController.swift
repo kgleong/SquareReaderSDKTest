@@ -17,7 +17,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
+        view.backgroundColor = SampleApp.backgroundColor
+
         // The user may be directed to the Settings app to change their permissions.
         // When they return, update the current screen.
         NotificationCenter.default.addObserver(self, selector: #selector(updateScreen), name: UIApplication.willEnterForegroundNotification, object: nil)
@@ -32,14 +34,13 @@ class ViewController: UIViewController {
             permissionsViewController.delegate = self
             show(viewController: permissionsViewController)
         } else if !readerSDKAuthorized {
-            //Authorize SDK
-            let code = "sq0acp-66GXz9TkJs6ZR76jUr2FYJk4Jg_g-M9nwyWhjG5YJ2U"
+            let code = "sq0acp-SrUq0jR_1bUYj086XCeBSZi2mIqEV2mZsSRA6G7O6Sc"
             SquareReaderAuthorize.authorize(withCode: code,
                                             onSuccess: { (location) in self.onAuthorizeSuccess(location: location)},
                                             onError: { (error) in self.onAuthorizeFail(error: error) })
         } else {
             let payViewController = PayViewController()
-//            payViewController.delegate = self
+            payViewController.delegate = self
             show(viewController: payViewController)
         }
     }
@@ -51,7 +52,9 @@ class ViewController: UIViewController {
     }
     
     func onAuthorizeFail(error: SQRDAuthorizationError) {
-        
+        DispatchQueue.main.async {
+                self.updateScreen()
+        }
     }
     
 }
@@ -59,6 +62,14 @@ class ViewController: UIViewController {
 extension ViewController: PermissionsViewControllerDelegate {
     func permissionsViewControllerDidObtainRequiredPermissions(_ permissionsViewController: PermissionsViewController) {
         updateScreen()
+    }
+}
+
+extension ViewController: PayViewControllerDelegate {
+    func payViewControllerDidRequestDeauthorization(_ payViewController: PayViewController) {
+//        let deauthorizeViewController = DeauthorizeViewController()
+//        deauthorizeViewController.delegate = self
+//        show(viewController: deauthorizeViewController)
     }
 }
 

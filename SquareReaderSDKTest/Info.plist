@@ -62,8 +62,6 @@
 	</array>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>This app requires access to Bluetooth to communicate with nearby card readers.</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>This app requires access to Bluetooth to communicate with nearby card readers.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Use the camera to scan QR codes.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
@@ -72,5 +70,7 @@
 	<string>This app requires access to the microphone to accept swipes.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app requires access to your photos to use in the kiosk</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This app requires access to Bluetooth to communicate with nearby card readers.</string>
 </dict>
 </plist>

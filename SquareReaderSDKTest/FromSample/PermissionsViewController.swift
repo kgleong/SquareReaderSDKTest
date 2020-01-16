@@ -18,7 +18,7 @@ import UIKit
 import CoreLocation
 import AVFoundation
 
-protocol PermissionsViewControllerDelegate: AnyObject {
+protocol PermissionsViewControllerDelegate: class {
     /// Called when the user grants all required permissions
     func permissionsViewControllerDidObtainRequiredPermissions(_ permissionsViewController: PermissionsViewController)
 }
@@ -29,9 +29,11 @@ protocol PermissionsViewControllerDelegate: AnyObject {
  * Square requires microphone access to swipe credit cards using the headphone jack
  * on your device and location (while your app is in use) to protect buyers and sellers.
  */
-class PermissionsViewController: UIViewController {
+final class PermissionsViewController: BaseViewController {
     public weak var delegate: PermissionsViewControllerDelegate?
-
+    
+    private lazy var microphoneButton = PrimaryButton(title: "Enable Microphone Access", target: self, selector: #selector(microphoneButtonTapped))
+    private lazy var locationButton = PrimaryButton(title: "Enable Location Access", target: self, selector: #selector(locationButtonTapped))
     private lazy var locationManager = CLLocationManager()
     
     /// Returns true if all required permissions have been granted by the user.
@@ -45,6 +47,8 @@ class PermissionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        titleLabel.text = "Grant Reader SDK the\nrequired permissions."
+        [microphoneButton, locationButton].forEach(buttonsStackView.addArrangedSubview)
         updateMicrophoneButton()
         updateLocationButton()
 
@@ -60,10 +64,6 @@ class PermissionsViewController: UIViewController {
                                                object: nil)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        getMicrophonePermission()
-        getLocationPermission()
-    }
     // MARK: - Private Methods
     private func openSettings() {
         if let url = URL(string: UIApplication.openSettingsURLString) {
@@ -74,15 +74,13 @@ class PermissionsViewController: UIViewController {
 
 // MARK: - Microphone Access
 extension PermissionsViewController {
-    @objc private func getMicrophonePermission() {
+    @objc private func microphoneButtonTapped() {
         switch AVAudioSession.sharedInstance().recordPermission {
         case .denied:
             openSettings()
         case .undetermined:
             requestMicrophoneAccess()
         case .granted:
-            return
-        default:
             return
         }
     }
@@ -113,26 +111,22 @@ extension PermissionsViewController {
         case .undetermined:
             title = "Enable Microphone Access"
             isEnabled = true
-        default:
-            break
         }
         
-//        microphoneButton.setTitle(title, for: [])
-//        microphoneButton.isEnabled = isEnabled
+        microphoneButton.setTitle(title, for: [])
+        microphoneButton.isEnabled = isEnabled
     }
 }
 
 // MARK: - Location Access
 extension PermissionsViewController: CLLocationManagerDelegate {
-    @objc private func getLocationPermission() {
+    @objc private func locationButtonTapped() {
         switch CLLocationManager.authorizationStatus() {
         case .denied, .restricted:
             openSettings()
         case .notDetermined:
             requestLocationAccess()
         case .authorizedAlways, .authorizedWhenInUse:
-            return
-        default:
             return
         }
     }
@@ -164,11 +158,9 @@ extension PermissionsViewController: CLLocationManagerDelegate {
         case .notDetermined:
             title = "Enable Location Access"
             isEnabled = true
-        default:
-            return
         }
         
-//        locationButton.setTitle(title, for: [])
-//        locationButton.isEnabled = isEnabled
+        locationButton.setTitle(title, for: [])
+        locationButton.isEnabled = isEnabled
     }
 }

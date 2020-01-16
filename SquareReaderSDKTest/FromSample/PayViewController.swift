@@ -24,11 +24,11 @@ protocol PayViewControllerDelegate: class {
 /**
  * Start using Square Reader SDK!
  */
-final class PayViewController: UIViewController {
+final class PayViewController: BaseViewController {
     public weak var delegate: PayViewControllerDelegate?
     
-//    private lazy var checkoutButton = PrimaryButton(title: "Charge \(format(amount: amount))", target: self, selector: #selector(checkoutButtonTapped))
-//    private lazy var settingsButton = SecondaryButton(title: "Settings", target: self, selector: #selector(settingsButtonTapped))
+    private lazy var checkoutButton = PrimaryButton(title: "Charge \(format(amount: amount))", target: self, selector: #selector(checkoutButtonTapped))
+    private lazy var settingsButton = SecondaryButton(title: "Settings", target: self, selector: #selector(settingsButtonTapped))
     
     private var authorizedLocation: SQRDLocation {
         guard let location = SQRDReaderSDK.shared.authorizedLocation else {
@@ -42,11 +42,9 @@ final class PayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        titleLabel.text = "Take a payment."
-//        buttonsStackView.addArrangedSubview(checkoutButton)
-//        buttonsStackView.addArrangedSubview(settingsButton)
-        
-        checkoutButtonTapped()
+        titleLabel.text = "Take a payment."
+        buttonsStackView.addArrangedSubview(checkoutButton)
+        buttonsStackView.addArrangedSubview(settingsButton)
     }
     
     @objc private func checkoutButtonTapped() {
@@ -66,25 +64,25 @@ final class PayViewController: UIViewController {
         }
     }
     
-//    @objc private func settingsButtonTapped() {
-//        let preferredStyle: UIAlertControllerStyle = UIDevice.current.userInterfaceIdiom == .pad ? .alert : .actionSheet
-//        let alertController = UIAlertController(title: "Location: \(authorizedLocation.name)", message: nil, preferredStyle: preferredStyle)
-//
-//        alertController.addAction(UIAlertAction(title: "Reader Settings", style: .default) { (action) in
-//            let readerSettingsController = SQRDReaderSettingsController(delegate: self)
-//            readerSettingsController.present(from: self)
-//        })
-//
-//        if SQRDReaderSDK.shared.canDeauthorize {
-//            alertController.addAction(UIAlertAction(title: "Deauthorize", style: .destructive) { (action) in
-//                self.delegate?.payViewControllerDidRequestDeauthorization(self)
-//            })
-//        }
-//
-//        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-//
-//        present(alertController, animated: true, completion: nil)
-//    }
+    @objc private func settingsButtonTapped() {
+        let preferredStyle: UIAlertController.Style = UIDevice.current.userInterfaceIdiom == .pad ? .alert : .actionSheet
+        let alertController = UIAlertController(title: "Location: \(authorizedLocation.name)", message: nil, preferredStyle: preferredStyle)
+        
+        alertController.addAction(UIAlertAction(title: "Reader Settings", style: .default) { (action) in
+            let readerSettingsController = SQRDReaderSettingsController(delegate: self)
+            readerSettingsController.present(from: self)
+        })
+        
+        if SQRDReaderSDK.shared.canDeauthorize {
+            alertController.addAction(UIAlertAction(title: "Deauthorize", style: .destructive) { (action) in
+                self.delegate?.payViewControllerDidRequestDeauthorization(self)
+            })
+        }
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+    }
     
     private func format(amount: Int) -> String {
         let formatter = NumberFormatter()

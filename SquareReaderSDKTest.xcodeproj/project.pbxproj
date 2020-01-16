@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		78C0910E23D0267A00968FF1 /* PermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0910D23D0267900968FF1 /* PermissionsViewController.swift */; };
 		78C0911223D1046700968FF1 /* SquareReaderAuthorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0911123D1046700968FF1 /* SquareReaderAuthorize.swift */; };
-		78C0911523D110AE00968FF1 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0911423D110AE00968FF1 /* PayViewController.swift */; };
+		78C0913823D1227500968FF1 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0913623D1227500968FF1 /* PrimaryButton.swift */; };
+		78C0913923D1227500968FF1 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0913723D1227500968FF1 /* SecondaryButton.swift */; };
+		78C0913B23D1247100968FF1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0913A23D1247100968FF1 /* BaseViewController.swift */; };
+		78C0913D23D1248600968FF1 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0913C23D1248600968FF1 /* PayViewController.swift */; };
+		78C0913F23D124D200968FF1 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0913E23D124D200968FF1 /* SampleApp.swift */; };
+		78C0914123D1285F00968FF1 /* PermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0914023D1285F00968FF1 /* PermissionsViewController.swift */; };
 		78DFAE8223CFED10009DFDA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DFAE8123CFED10009DFDA8 /* AppDelegate.swift */; };
 		78DFAE8423CFED10009DFDA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DFAE8323CFED10009DFDA8 /* SceneDelegate.swift */; };
 		78DFAE8623CFED10009DFDA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DFAE8523CFED10009DFDA8 /* ViewController.swift */; };
@@ -35,9 +39,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		78C0910D23D0267900968FF1 /* PermissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsViewController.swift; sourceTree = "<group>"; };
 		78C0911123D1046700968FF1 /* SquareReaderAuthorize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareReaderAuthorize.swift; sourceTree = "<group>"; };
-		78C0911423D110AE00968FF1 /* PayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		78C0913623D1227500968FF1 /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		78C0913723D1227500968FF1 /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		78C0913A23D1247100968FF1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		78C0913C23D1248600968FF1 /* PayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		78C0913E23D124D200968FF1 /* SampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
+		78C0914023D1285F00968FF1 /* PermissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsViewController.swift; sourceTree = "<group>"; };
 		78DFAE7E23CFED10009DFDA8 /* SquareReaderSDKTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareReaderSDKTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DFAE8123CFED10009DFDA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78DFAE8323CFED10009DFDA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78C0914223D1286700968FF1 /* FromSample */ = {
+			isa = PBXGroup;
+			children = (
+				78C0913A23D1247100968FF1 /* BaseViewController.swift */,
+				78C0914023D1285F00968FF1 /* PermissionsViewController.swift */,
+				78C0913C23D1248600968FF1 /* PayViewController.swift */,
+				78C0913623D1227500968FF1 /* PrimaryButton.swift */,
+				78C0913723D1227500968FF1 /* SecondaryButton.swift */,
+				78C0913E23D124D200968FF1 /* SampleApp.swift */,
+			);
+			path = FromSample;
+			sourceTree = "<group>";
+		};
 		78DFAE7523CFED10009DFDA8 = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +106,7 @@
 				78DFAE8323CFED10009DFDA8 /* SceneDelegate.swift */,
 				78DFAE8523CFED10009DFDA8 /* ViewController.swift */,
 				78C0911123D1046700968FF1 /* SquareReaderAuthorize.swift */,
-				78C0910D23D0267900968FF1 /* PermissionsViewController.swift */,
-				78C0911423D110AE00968FF1 /* PayViewController.swift */,
+				78C0914223D1286700968FF1 /* FromSample */,
 				78DFAE8723CFED10009DFDA8 /* Main.storyboard */,
 				78DFAE8A23CFED11009DFDA8 /* Assets.xcassets */,
 				78DFAE8C23CFED11009DFDA8 /* LaunchScreen.storyboard */,
@@ -187,7 +207,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FRAMEWORKS=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n\"${FRAMEWORKS}/SquareReaderSDK.framework/setup\"\n";
+			shellScript = "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/SquareReaderSDK.framework/setup\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -197,11 +217,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				78DFAE8623CFED10009DFDA8 /* ViewController.swift in Sources */,
-				78C0911523D110AE00968FF1 /* PayViewController.swift in Sources */,
 				78DFAE8223CFED10009DFDA8 /* AppDelegate.swift in Sources */,
 				78DFAE8423CFED10009DFDA8 /* SceneDelegate.swift in Sources */,
+				78C0913923D1227500968FF1 /* SecondaryButton.swift in Sources */,
+				78C0913D23D1248600968FF1 /* PayViewController.swift in Sources */,
+				78C0914123D1285F00968FF1 /* PermissionsViewController.swift in Sources */,
+				78C0913B23D1247100968FF1 /* BaseViewController.swift in Sources */,
+				78C0913823D1227500968FF1 /* PrimaryButton.swift in Sources */,
 				78C0911223D1046700968FF1 /* SquareReaderAuthorize.swift in Sources */,
-				78C0910E23D0267A00968FF1 /* PermissionsViewController.swift in Sources */,
+				78C0913F23D124D200968FF1 /* SampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -331,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -344,7 +368,7 @@
 		78DFAE9323CFED11009DFDA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4GA6H5JHE;
@@ -369,7 +393,7 @@
 		78DFAE9423CFED11009DFDA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4GA6H5JHE;
