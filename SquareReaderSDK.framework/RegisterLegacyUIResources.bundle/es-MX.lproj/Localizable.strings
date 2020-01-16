@@ -1,0 +1,141 @@
+/* This describes the title for screen reader of CQSohoNumericKeyboardContentViewABCButtonTitle~iphone. */
+"CQSohoNumericKeyboardContentViewABCButtonAccessibilityLabel~iphone" = "ABC";
+
+/* This is the label shown to the user when he can switch between different keyboard types (alphabetic vs numeric), for example when entering the ZIP code for a card-not present payment. */
+"CQSohoNumericKeyboardContentViewABCButtonTitle~iphone" = "ABC";
+
+/* This describes the title for screen reader of CQSohoNumericKeyboardContentViewDecimalButtonTitle~iphone. */
+"CQSohoNumericKeyboardContentViewDecimalButtonAccessibilityLabel~iphone" = "Decimal";
+
+/* The decimal symbol to use on the numeric keyboard. */
+"CQSohoNumericKeyboardContentViewDecimalButtonTitle~iphone" = ".";
+
+/* Format for the quantity/count that is appended to the title of some cells. */
+"CellTitleQuantitySecondaryLabelFormat" = "× %@";
+
+/* Placeholder text for field where the user enters their email address in order to receive a receipt. */
+"CustomerFacing.EmailReceiptFocusedPlaceholder" = "Dirección de correo electrónico";
+
+/* Placeholder text for field where the user enters their email address in order to receive a receipt. */
+"CustomerFacing.EmailReceiptUnfocusedPlaceholder" = "Recibo por email";
+
+/* 14 Days cell title for due date upon receipt. */
+"DatePicker14DaysCellTitle" = "14 días";
+
+/* 30 Days cell title for due date upon receipt. */
+"DatePicker30DaysCellTitle" = "30 días";
+
+/* 7 Days cell title for due date upon receipt. */
+"DatePicker7DaysCellTitle" = "7 días";
+
+/* Custom cell title for due date upon receipt. */
+"DatePickerCustomDateCellTitle" = "Personalizada";
+
+/* End Of Month cell title for due date upon receipt. */
+"DatePickerEndOfMonthCellTitle" = "Fin de mes";
+
+/* Cell title for immediate due date (due now). */
+"DatePickerImmediatelyCellTitle" = "Inmediatamente";
+
+/* Default title for table footer button to confirm deletion. */
+"DefaultConfirmDeleteButtonTitle" = "Confirmar eliminación";
+
+/* Information spoken to the user with VoiceOver enabled when someone focuses a highlight control that is currently checked and supports multiple selections. */
+"HighlightTableViewCellSelectedEnabledAccessibilityHint" = "Pulse dos veces para deseleccionar";
+
+/* Information spoken to the user with VoiceOver enabled when someone focuses a highlight control that is currently not checked or disabled. */
+"HighlightTableViewCellUnselectedEnabledAccessibilityHint" = "Pulsar dos veces para seleccionar";
+
+/* This is the accessibility label for the first part of a cancel confirm button, which is an 'X' glyph. */
+"MQPadThemeCancelButtonAccessibilityLabel" = "Cancelar";
+
+/* The title displayed in the navigation bar when the Choose Photo view is visible. */
+"MQPhotoAlbumPhotoPickerViewControllerTitle" = "Elegir foto";
+
+/* The title of the done button in the scale and crop photo view controller. */
+"MQPhotoScaleAndCropViewControllerDoneButtonTitle" = "Recorte terminado";
+
+/* The title displayed in the navigation bar when cropping a photo in the item editing flow. */
+"MQPhotoScaleAndCropViewControllerTitle" = "Recortar foto";
+
+/* The title of the button in the Public Profile business logo picker which shows the camera interface. */
+"MQPhotoTakeOrPickViewControllerButtonTitle" = "Tomar fotografía";
+
+/* The title of the Public Profile business logo photo picker. */
+"MQPhotoTakeOrPickViewControllerTitle" = "Fotos";
+
+/* The main logotype text for the app */
+"MQPointOfSaleLogotype" = "Punto de venta Square";
+
+/* Accessibility label for cross clear text button that appears on the right after tapping the search input text field. */
+"MQSearchTextFieldClearTextButtonAccessibilityLabel" = "Eliminar texto";
+
+/* The default accessibility title of a tab in the Point of Sale tab bar if no title is provided by the tab. */
+"MQTabBarTabControlDefaultTitle" = "Cuenta";
+
+/* Title for the mobile point of sale employee account lockout. */
+"MQUserPermissionsLockoutAlertTitle" = "Acceso no permitido";
+
+/* Displayed on a numeric badge when the count exceeds the maximum value. */
+"MaximumDisplayedNumericBadgeQuantity" = "•••";
+
+/* Return key title on the keyboard for the cash field on the 'Payment Details' view. */
+"MoneyFieldTenderButtonTitle" = "Cobrar";
+
+/* Default unfocused placeholder for the cash screen. */
+"MoneyFieldUnfocusedPlaceholder" = "Otra cantidad";
+
+/* Message for the alert that's shown when Register does not have permission to access the device's photo library. */
+"PhotoAlbumPickerNoPhotosAccessErrorMessage" = "Desde la aplicación Ajustes, visite Privacidad > Fotos para asegurarse de que el acceso a Square Register esté activado. Reinicie Square Register para ver sus fotos.";
+
+/* Title for the alert that's shown when Register does not have permission to access the device's photo library. */
+"PhotoAlbumPickerNoPhotosAccessErrorTitle" = "Error al cargar álbumes";
+
+/* Text to appear on the delete confirmation button for cells */
+"RGUITableViewCellDeleteConfirmationButtonTitle" = "Eliminar";
+
+/* Cancel button for the RLUIAlertView. */
+"RLUIAlertViewLayoutCancel" = "Cancelar";
+
+/* The accessibility Label for the [+] button of the quantity stepper in the itemization options editing screen */
+"RLUIItemizationOptionsQuantityStepperAddButtonAccessibilityLabel" = "Aumentar";
+
+/* The Accessibility Label for the quantity text field of the quantity stepper in the itemization options editing screen, the quantity's numeric value will be set as the stepper's Accessibility Value */
+"RLUIItemizationOptionsQuantityStepperAmountAccessibilityLabel" = "Cantidad";
+
+/* The accessibility Label for the [-] button of the quantity stepper in the itemization options editing screen */
+"RLUIItemizationOptionsQuantityStepperSubtractButtonAccessibilityLabel" = "Disminuir";
+
+/* Default title for the submit button in a multiline text input. */
+"RLUIMultilineTextSubmissionFieldDefaultSubmitTitle" = "Enviar";
+
+/* Add button on numerical keyboard. */
+"RLUIPadInlineNumericKeyboard.AddKey.AccessibilityLabel" = "Agregar";
+
+/* Charge button on numerical keyboard. */
+"RLUIPadInlineNumericKeyboard.ChargeKey.AccessibilityLabel" = "Cobrar";
+
+/* The accessibility title of the button used to reveal the list of settings or search results. */
+"RLUIPadSlidingSplitViewControllerShowMasterViewButton" = "Mostrar lista";
+
+/* Accessibility label for the backspace button on the employee passcode keyboard. */
+"RLUIPasscodeKeyboardContentViewBackspaceButtonAccessibilityLabel" = "Retroceso";
+
+/* Text for menu control that displays options for a given attachment. */
+"RLUISubtitleMenuTableViewCellAttachmentOptions" = "Opciones de adjuntos";
+
+/* Alert message to notify users of unsaved changes. */
+"RLUITableViewControllerUnsavedChangesAlertMessage" = "¿Desea reanudar la edición o descartar estos cambios?";
+
+/* Alert title to notify users of unsaved changes. */
+"RLUITableViewControllerUnsavedChangesAlertTitle" = "Cambios no guardados";
+
+/* Alert button title to notify users of unsaved changes. If selected, this button will discard the unsaved changes. */
+"RLUITableViewControllerUnsavedChangesDiscardButtonTitle" = "Descartar";
+
+/* Alert button title to notify users of unsaved changes. If selected, this button will go back to the edit item screen to resume editing. */
+"RLUITableViewControllerUnsavedChangesResumeButtonTitle" = "Reanudar";
+
+/* This is the accessibility label for the 'x' used to clear the text from an MQSearchTextField. */
+"SearchTextFieldClearTextButtonLabel" = "Eliminar texto";
+

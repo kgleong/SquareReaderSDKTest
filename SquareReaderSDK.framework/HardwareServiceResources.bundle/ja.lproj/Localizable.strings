@@ -1,0 +1,159 @@
+/* The manufacturer name for Bluetooth LE connected card readers made by Square. */
+"BluetoothLECardReaderLifecycleManagerManufacturerNameSquare-BLE" = "Square";
+
+/* The manufacturer name for USB connected card readers made by Square. */
+"BluetoothLECardReaderLifecycleManagerManufacturerNameSquare-USB" = "Square";
+
+/* The model name for the Square Reader for contactless and chip (codename R12) when connected wirelessly. */
+"BluetoothLECardReaderLifecycleManagerModelNameR12-BLE" = "Bluetooth・ICカード対応 ";
+
+/* The model name for the Square Reader for contactless and chip (codename R12) when connected over USB. Should be the same name as when it is connected over wirelessly. */
+"BluetoothLECardReaderLifecycleManagerModelNameR12-USB" = "Bluetooth・ICカード対応 ";
+
+/* The description of the error message displayed when a bluetooth LE peripheral failed to pair with Point of Sale. */
+"BluetoothLEPeripheralGenericPairingErrorDescription" = "POSレジは Square Readerとのペアリングに失敗しました。もう一度やり直してください。";
+
+/* The title of the error message displayed when a bluetooth LE peripheral failed to pair with Point of Sale. */
+"BluetoothLEPeripheralGenericPairingErrorTitle" = "ペアリングに失敗しました";
+
+/* If a card reader has no name and no product name, this is used as the card reader's display name. */
+"CardReaderDefaultName" = "カードリーダー";
+
+/* Title of the initialization state arrived at once the reader is preparing to accept payments. This includes, among other things, establishing a secure session. */
+"CardReaderInitializationStateTitleConnecting" = "接続中";
+
+/* Title of the initialization state arrived at once the reader was not able to successfully initialize. */
+"CardReaderInitializationStateTitleFailed" = "失敗しました";
+
+/* Title of the initialization state arrived at once the reader is ready to take payments. */
+"CardReaderInitializationStateTitleReady" = "準備完了";
+
+/* Title of the initialization state wherein the reader is paired with Point of Sale but not connected. A connection will automatically be established when the reader enters range. Applies only to wireless peripherals. */
+"CardReaderInitializationStateTitleUnavailable" = "利用不可";
+
+/* Title of the default initialization state. This is not a state which should be displayed in normal circumstances. */
+"CardReaderInitializationStateTitleUnknown" = "不明";
+
+/* Title of the initialization state arrived at once the reader is updating its firmware. */
+"CardReaderInitializationStateTitleUpdating" = "アップデート中...";
+
+/* Format for showing the card reader name (first parameter) and the last 4 digits of the serial number (second parameter). */
+"CardReaderNameAndSerialNumberFormat" = "%1$@（%2$@）";
+
+/* The error message shown when a card reader needs Point of Sale to be updated before it can connect */
+"HQBluetoothLECardReaderPairingAppUpdateRequiredMessage" = "タッチ・IC カード対応 Square Readerを使うには、Square POSレジをアップデートしてください。";
+
+/* The error title shown when a card reader needs Point of Sale to be updated before it can connect. */
+"HQBluetoothLECardReaderPairingAppUpdateRequiredTitle" = "Square POSレジのアップデートが必要です";
+
+/* The title of the affordance that will allow the merchant to upgrade Point of Sale. */
+"HQBluetoothLECardReaderPairingAppUpdateRequiredUpgradeTitle" = "App Store";
+
+/* The checking account type. Should read 'Chequing' in Canada and 'Cheque' in Australia, per respective Interac and EFTPOS requirements. */
+"HQPaymentAccountCRPaymentAccountTypeChecking" = "当座";
+
+/* The credit account type. */
+"HQPaymentAccountCRPaymentAccountTypeCredit" = "クレジットカード";
+
+/* The default account type. */
+"HQPaymentAccountCRPaymentAccountTypeDefault" = "デフォルト";
+
+/* The savings account type. */
+"HQPaymentAccountCRPaymentAccountTypeSavings" = "普通";
+
+/* Display name for peripheral with no custom name, placeholder name, or manufacturer/model name. */
+"HQPeripheralDefaultDisplayName" = "周辺機器";
+
+/* The description indicating how to swipe more successfully for the error message. */
+"LCRReaderCapabilitySwipeFailedErrorDescription" = "すばやくスワイプしてください";
+
+/* The message indicating that a swipe was unsuccessful. */
+"LCRReaderCapabilitySwipeFailedErrorTitle" = "もう一度試してください";
+
+/* Format string for concatenated printer make and model. */
+"ManufacturerAndModelNameFormat" = "%1$@ %2$@";
+
+/* Description used for an error when a peripheral is not connected. */
+"PeripheralNotConnectedErrorDescription" = "端末の電源とすべてが接続されていることを確認して下さい。";
+
+/* Title used for an error when a peripheral is not connected. */
+"PeripheralNotConnectedErrorTitle" = "デバイスが接続されていません";
+
+/* Description used for an error when a peripheral does not support a given operation. */
+"PeripheralOperationUnsupportedErrorDescription" = "ご利用の端末はこの操作に対応していません。別のデバイスまたは別の操作をお試し下さい";
+
+/* Title used for an error when a peripheral does not support a given operation. */
+"PeripheralOperationUnsupportedErrorTitle" = "対応外の操作です";
+
+/* Description used for an error when an unknown problem occurred with a peripheral. */
+"PeripheralUnknownErrorDescription" = "問題が発生しました。端末の接続と電源を確認して下さい。";
+
+/* Title used for an error when an unknown problem occurred with a peripheral. */
+"PeripheralUnknownErrorTitle" = "デバイスエラー";
+
+/* The manufacturer name for headphone jack connected card readers made by Square. */
+"ReaderCapabilityManufacturerNameSquare" = "Square";
+
+/* The model name for the Square Reader for chip (codename R6) */
+"ReaderCapabilityModelNameR6" = "ICカード対応";
+
+/* The subtitle shown to the user when an R12 drops to a low battery level while connected to Point of Sale. Ex. 'Square Reader for contactless and chip battery is at 20%.  Plug in the reader via USB to charge the battery.' */
+"ReaderDetectedLowBatteryLevelAlertMessageFormatString-R12" = "Square Reader (Bluetooth 接続) のバッテリー残量が%1$@%です。USBケーブルで充電してください。";
+
+/* The subtitle shown to the user when a reader drops to a low battery level while connected to Point of Sale. Ex. 'Reader for contactless and chip battery is at 20%.  Plug in the reader via USB to charge the battery.' */
+"ReaderDetectedLowBatteryLevelAlertMessageFormatString-R6" = "ICカード対応リーダーのバッテリー充電残量が %1$@% です。USBケーブルをリーダーに接続して充電してください。";
+
+/* The name for Square Readers that read only magstripe cards (R4-class devices) which have not been further distinguished */
+"ReaderModelNameMagstripe" = "磁気ストライプ";
+
+/* Localized name for e-money brand Common. */
+"SQREMoneyBrandNameCommon" = "共通";
+
+/* Localized name for e-money brand iD. */
+"SQREMoneyBrandNameID" = "iD";
+
+/* Localized name for e-money brand Nanaco. */
+"SQREMoneyBrandNameNanaco" = "Nanaco";
+
+/* Localized name for e-money brand PiTaPa. */
+"SQREMoneyBrandNamePiTaPa" = "PiTaPa";
+
+/* Localized name for e-money brand QUICPay. */
+"SQREMoneyBrandNameQUICPay" = "QUICPay";
+
+/* Localized name for e-money brand Rakuten. */
+"SQREMoneyBrandNameRakuten" = "Rakuten";
+
+/* Localized name for e-money brand Suica(Transportation Group). */
+"SQREMoneyBrandNameSuica" = "交通系IC";
+
+/* Localized name for an unknown e-money brand. */
+"SQREMoneyBrandNameUnknown" = "不明";
+
+/* Localized name for e-money brand WAON. */
+"SQREMoneyBrandNameWAON" = "WAON";
+
+/* The default error title shown to the user when a secure session fails. */
+"SecureSessionFailureErrorTitle-Default" = "Squareリーダーの接続に失敗しました";
+
+/* The default error subtitle shown to the user when a secure session fails. */
+"SecureSessionFailureNotificationDescription-Default" = "サポートチームにお問い合わせください。";
+
+/* The error subtitle shown to the user when an attempt to establish secure session fails due to the max number of readers already being conected. */
+"SecureSessionFailureNotificationDescription-MaxReadersConnected" = "すでにリーダーの最大接続台数が接続されています。";
+
+/* The error subtitle shown to the user when a secure session fails due to a flaky/unreliable internet connection. */
+"SecureSessionFailureNotificationDescription-NetworkTimeOut" = "インターネット接続にエラーが発生しました。インターネットの接続を確認してください。";
+
+/* The error subtitle shown to the user when a secure session establishment fails due to Square having server issues. */
+"SecureSessionFailureNotificationDescription-ServerError" = "あとでやり直してください。このメッセージが引き続き表示される場合はサポートにご連絡ください。";
+
+/* The error subtitle shown to the user when an attempt to establish secure session fails. */
+"SecureSessionFailureNotificationDescriptionDefault-TryAgain" = "「再試行」を押すか、このメッセージが続く場合はサポートにご連絡ください。";
+
+/* The error title shown to the user when a secure session fails due to a flaky/unreliable internet connection. */
+"SecureSessionFailureNotificationTitle-NetworkTimeOut" = "Square Reader はインターネット接続が必要です";
+
+/* If a stand has no name and no product name, this is used as the stand's display name. */
+"StandDefaultName" = "Square Stand";
+
