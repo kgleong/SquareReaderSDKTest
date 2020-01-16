@@ -16,6 +16,7 @@
 		78DFAE9623CFED55009DFDA8 /* SquareCheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DFAE9523CFED55009DFDA8 /* SquareCheckoutViewController.swift */; };
 		78DFAE9923D01064009DFDA8 /* SquareReaderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DFAE9823D01064009DFDA8 /* SquareReaderSDK.framework */; };
 		78DFAE9A23D01064009DFDA8 /* SquareReaderSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78DFAE9823D01064009DFDA8 /* SquareReaderSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78DFAE9E23D01724009DFDA8 /* SquareSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DFAE9D23D01724009DFDA8 /* SquareSetupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		78DFAE8F23CFED11009DFDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78DFAE9523CFED55009DFDA8 /* SquareCheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareCheckoutViewController.swift; sourceTree = "<group>"; };
 		78DFAE9823D01064009DFDA8 /* SquareReaderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SquareReaderSDK.framework; sourceTree = "<group>"; };
+		78DFAE9D23D01724009DFDA8 /* SquareSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareSetupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				78DFAE8A23CFED11009DFDA8 /* Assets.xcassets */,
 				78DFAE8C23CFED11009DFDA8 /* LaunchScreen.storyboard */,
 				78DFAE8F23CFED11009DFDA8 /* Info.plist */,
+				78DFAE9D23D01724009DFDA8 /* SquareSetupViewController.swift */,
 				78DFAE9523CFED55009DFDA8 /* SquareCheckoutViewController.swift */,
 			);
 			path = SquareReaderSDKTest;
@@ -193,6 +196,7 @@
 				78DFAE8623CFED10009DFDA8 /* ViewController.swift in Sources */,
 				78DFAE8223CFED10009DFDA8 /* AppDelegate.swift in Sources */,
 				78DFAE8423CFED10009DFDA8 /* SceneDelegate.swift in Sources */,
+				78DFAE9E23D01724009DFDA8 /* SquareSetupViewController.swift in Sources */,
 				78DFAE9623CFED55009DFDA8 /* SquareCheckoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
