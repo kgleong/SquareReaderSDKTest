@@ -22,9 +22,9 @@ class ViewController: UIViewController {
 
         // The user may be directed to the Settings app to change their permissions.
         // When they return, update the current screen.
-        NotificationCenter.default.addObserver(self, selector: #selector(updateScreen), name: UIApplication.willEnterForegroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(updateScreen), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
-    
+        
     @objc internal func updateScreen() {
         let permissionsGranted = PermissionsViewController.areRequiredPermissionsGranted
         let readerSDKAuthorized = SQRDReaderSDK.shared.isAuthorized

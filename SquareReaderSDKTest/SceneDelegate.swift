@@ -47,19 +47,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
-        let applicationState: String = {
-            switch UIApplication.shared.applicationState {
-            case .active:
-                return "Active"
-            case .background:
-                return "Background"
-            case .inactive:
-                return "Inactive"
-            @unknown default:
-                fatalError()
-            }
-        }()
-        
         print("sceneDelegate sceneWillEnterForeground applicationState: \(UIApplication.shared.applicationStateString)")
     }
 
