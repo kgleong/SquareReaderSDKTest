@@ -18,6 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        print("sceneDelegate willConnectTo applicationState: \(UIApplication.shared.applicationStateString)")
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
@@ -32,6 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        print("sceneDelegate didBecomeActive applicationState: \(UIApplication.shared.applicationStateString)")
     }
 
     @available(iOS 13.0, *)
@@ -44,6 +47,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
+        let applicationState: String = {
+            switch UIApplication.shared.applicationState {
+            case .active:
+                return "Active"
+            case .background:
+                return "Background"
+            case .inactive:
+                return "Inactive"
+            @unknown default:
+                fatalError()
+            }
+        }()
+        
+        print("sceneDelegate sceneWillEnterForeground applicationState: \(UIApplication.shared.applicationStateString)")
     }
 
     @available(iOS 13.0, *)
